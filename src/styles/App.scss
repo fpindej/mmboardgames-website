@@ -2,14 +2,15 @@
 @use './signupForm.scss';
 @use './imageContainer.scss';
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
 html, body
 {
-    padding: 0.2rem;
     height: 100%;
+    background-image: url(../resources/img_background.jpg);  
+    background-size: cover;
 }
-
-.App
-{
-    
-}
-  

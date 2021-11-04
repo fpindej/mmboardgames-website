@@ -44,7 +44,7 @@ const SignupForm = ({status, message, onValidated}) => {
             onChange={(e) => setState({...state, firstName: e.target.value})}
             type="text"
             value={state.firstName}
-            placeholder="Mark"
+            placeholder="Your first name"
             isRequired
           />
 
@@ -54,13 +54,14 @@ const SignupForm = ({status, message, onValidated}) => {
             onChange={(e) => setState({...state, email: e.target.value})}
             type="email"
             value={state.email}
-            placeholder="mark@jumper.com"
+            placeholder="Your email"
             isRequired
           />
 
           <input
           className="submit-button"
           label="subscribe"
+          value="SIGN UP"
           type="submit"
           onClick={(e) => handleSubmit(e)}
         />
