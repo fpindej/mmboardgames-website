@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import '../../styles/comingSoonPage.scss';
 import ImageContainer from '../ui/ImageContainer';
 import SignupFormContainer from '../ui/SignupFormContainer';
