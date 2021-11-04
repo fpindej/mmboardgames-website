@@ -1,30 +1,37 @@
 .coming-soon-page {
     height: 100%;
+    width: 100%;
+
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 
     .box-img-container {
-        width: 40%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        height: 40%;
+        width: auto;
     }
 
     .jumper-img-container {
-        height: 80%;
-        width: 25%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        height: 40%;
+        width: auto;
     }
 
-    .signup-form-container {
-        height: 80%;
-        width: 35%;
+    .signup-form-and-title-container {
+        height: auto;
+        width: 20%;
+
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
+
+        .gameTitle-container{
+            width: 80%;
+            margin-bottom: 3rem;
+        }
+
+        .signup-form-container{
+        }
     }
+    
 }

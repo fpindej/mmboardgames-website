@@ -23,18 +23,18 @@ const SignupForm = ({status, message, onValidated}) => {
 
         {status === "sending" && (
           <div>
-            Sending...form-title
+            Sending...
           </div>
         )}
         {status === "error" && (
-          <div            
-            dangerouslySetInnerHTML={{ __html: message }}
-          />
+          <div>
+            Already subscribed
+          </div>    
         )}
         {status === "success" && (
-          <div
-            dangerouslySetInnerHTML={{ __html: message }}
-          />
+          <div>
+            Thank You for subscribing!
+          </div>
         )}
 
         <div className="form-container">

@@ -4,6 +4,7 @@ import ImageContainer from '../ui/ImageContainer';
 import SignupFormContainer from '../ui/SignupFormContainer';
 import boardGameImg from '../../resources/img_box.png';
 import jumper1Img from '../../resources/img_jumper1.png';
+import gameTitleImg from '../../resources/img_gameTitle.png'
 
 const ComingSoonPage = () => {
 
@@ -16,8 +17,13 @@ const ComingSoonPage = () => {
             <div className="jumper-img-container">
                 <ImageContainer imgPath={jumper1Img} alt="404"/>
             </div>
-            <div className="signup-form-container">
-                <SignupFormContainer />
+            <div className="signup-form-and-title-container">
+                <div className="gameTitle-container">
+                    <ImageContainer imgPath={gameTitleImg} alt="404" />
+                </div>
+                <div className="signup-form-container">
+                    <SignupFormContainer />
+                </div>
             </div>
         </div>
     );
