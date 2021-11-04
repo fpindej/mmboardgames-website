@@ -4,24 +4,30 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        width: 100%;
+    }
+
+    .form-title
+    {
+        margin-bottom: 0.5rem
     }
 
     .form-input {
+        width: 100%;
         margin: 0.2rem;
-        border-radius: 12px;
         padding: 5%;
-        border: solid 1px blueviolet;
+        border: solid 1px black;
+        background-color: #FDFDFD;
     }
 
     .submit-button {
-        margin: 0.2rem;
-        border-radius: 12px;
+        width: 100%;
+        margin: 1rem 0.2rem;        
         padding: 5%;
-        border: solid 1px blueviolet;
-        background-color: white;
-    }
-
-    .submit-button:active{
-        background-color: yellow;
+        border: solid 1px transparent;
+        background-color: #FC7F00;
+        color: #FEFCFE;
+        font-weight: bolder;
+        box-shadow: 0 4px 9px 0 #333333, 0 0 8px 0 #333333;
     }
 }

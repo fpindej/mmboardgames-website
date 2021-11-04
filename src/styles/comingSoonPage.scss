@@ -1,12 +1,28 @@
 .coming-soon-page {
     height: 100%;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
 
-    .content-center {
-        height: 69%;
-        width: 50%;
+    .box-img-container {
+        width: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .jumper-img-container {
+        height: 80%;
+        width: 25%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .signup-form-container {
+        height: 80%;
+        width: 35%;
         display: flex;
         align-items: center;
         justify-content: center;
