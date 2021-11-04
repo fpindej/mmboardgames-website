@@ -1,0 +1,27 @@
+.signup-form {
+    .form-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .form-input {
+        margin: 0.2rem;
+        border-radius: 12px;
+        padding: 5%;
+        border: solid 1px blueviolet;
+    }
+
+    .submit-button {
+        margin: 0.2rem;
+        border-radius: 12px;
+        padding: 5%;
+        border: solid 1px blueviolet;
+        background-color: white;
+    }
+
+    .submit-button:active{
+        background-color: yellow;
+    }
+}
