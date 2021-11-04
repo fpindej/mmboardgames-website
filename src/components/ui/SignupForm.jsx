@@ -19,7 +19,7 @@ const SignupForm = ({status, message, onValidated}) => {
 
     return (
         <form className="signup-form">
-        <h3 className="">Join our newsletter!</h3>
+        <h3 className="form-title">Join our newsletter!</h3>
 
         {status === "sending" && (
           <div>
