@@ -1,6 +1,7 @@
 .coming-soon-page {
     height: 100%;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -13,6 +14,12 @@
         flex-wrap: wrap;
         justify-content: space-evenly;
         align-items: center;
+
+        .box-img-container {
+            @media only screen and (max-height: 768px) {
+                display: none;
+            }
+        }
 
         .jumper-img-container {
             @media only screen and (max-width: 1080px) {
@@ -27,6 +34,7 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            margin-bottom: 2rem;
 
             .gameTitle-container{
                 @media only screen and (max-width: 768px) {
@@ -47,10 +55,14 @@
     }
 
     .social-media-container{
-        height: 20%;
+        height: 10%;
 
         display: flex;
         align-items: center;
         justify-content: space-evenly;
+
+        @media only screen and (max-width: 480px) {
+            height: 5%;
+        }
     }
 }
