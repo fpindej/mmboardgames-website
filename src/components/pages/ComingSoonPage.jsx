@@ -4,10 +4,10 @@ import ImageContainer from '../ui/ImageContainer';
 import GameLogoContainer from '../ui/GameLogoContainer';
 import SignupFormContainer from '../ui/SignupFormContainer';
 import boardGameImg from '../../resources/img_boxWithFigure.png';
-import jumper1Img from '../../resources/img_jumper1.png';
-import jumper2Img from '../../resources/img_jumper2.png';
-import jumper3Img from '../../resources/img_jumper3.png';
-import jumper4Img from '../../resources/img_jumper4.png';
+import jumper1Img from '../../resources/jumpers/img_jumper1.png';
+import jumper2Img from '../../resources/jumpers/img_jumper2.png';
+import jumper3Img from '../../resources/jumpers/img_jumper3.png';
+import jumper4Img from '../../resources/jumpers/img_jumper4.png';
 
 import gameTitleImg from '../../resources/img_gameTitle.png'
 
