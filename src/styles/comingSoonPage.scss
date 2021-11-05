@@ -7,9 +7,14 @@
     align-items: center;
 
     .box-img-container {
+        
     }
 
     .jumper-img-container {
+        @media only screen and (max-width: 1080px) {
+            display: none;
+        }
+         
     }
 
     .signup-form-and-title-container {
@@ -20,12 +25,18 @@
         justify-content: center;
 
         .gameTitle-container{
-
+            @media only screen and (max-width: 768px) {
+                margin-bottom: 3rem;
+            }
         }
 
         .signup-form-container{
             width: 70%;
         }
     }
-    
+
+    @media only screen and (max-width: 768px) {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
 }
