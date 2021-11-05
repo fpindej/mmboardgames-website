@@ -1,44 +1,56 @@
 .coming-soon-page {
     height: 100%;
-    padding: 0 9rem;
-
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
 
-    .box-img-container {
-        
-    }
+    .content{
+        height: 80%;
+        padding: 0 9rem;
 
-    .jumper-img-container {
-        @media only screen and (max-width: 1080px) {
-            display: none;
-        }
-         
-    }
-
-    .signup-form-and-title-container {
-      
         display: flex;
-        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
         align-items: center;
-        justify-content: center;
 
-        .gameTitle-container{
-            @media only screen and (max-width: 768px) {
-                margin-bottom: 3rem;
+        .jumper-img-container {
+            @media only screen and (max-width: 1080px) {
+                display: none;
+            }
+            
+        }
+
+        .signup-form-and-title-container {
+        
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            .gameTitle-container{
+                @media only screen and (max-width: 768px) {
+                    margin-bottom: 3rem;
+                }
+            }
+
+            .signup-form-container{
+                width: 70%;
             }
         }
 
-        .signup-form-container{
-            width: 70%;
+        @media only screen and (max-width: 768px) {
+            padding: 0;
+            flex-direction: column;
+            justify-content: space-evenly;
         }
     }
 
-    @media only screen and (max-width: 768px) {
-        padding: 0;
-        flex-direction: column;
+    .social-media-container{
+        height: 20%;
+
+        display: flex;
+        align-items: center;
         justify-content: space-evenly;
     }
 }
