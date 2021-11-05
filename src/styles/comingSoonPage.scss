@@ -1,5 +1,6 @@
 .coming-soon-page {
     height: 100%;
+    padding: 0 9rem;
 
     display: flex;
     flex-wrap: wrap;
@@ -36,6 +37,7 @@
     }
 
     @media only screen and (max-width: 768px) {
+        padding: 0;
         flex-direction: column;
         justify-content: space-evenly;
     }
