@@ -4,7 +4,7 @@ import '../../styles/imageContainer.scss';
 
 const ImageContainer = ({imgPath, altPath}) => {
     return(
-        <img className="board-game-image" src={imgPath} alt={altPath} />
+        <img className="image-container" src={imgPath} alt={altPath} />
     );
 }
 

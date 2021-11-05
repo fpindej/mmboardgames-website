@@ -6,7 +6,6 @@ const SignupForm = ({status, message, onValidated}) => {
     const [state, setState] = useState({email: '', firstName: ''});
 
     const handleSubmit = (e) => {
-      debugger;
         e.preventDefault();
         state.email &&
         state.firstName &&
