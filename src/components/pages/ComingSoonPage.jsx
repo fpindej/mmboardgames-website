@@ -15,6 +15,8 @@ import gameTitleImg from '../../resources/img_gameTitle.png'
 import facebookLogo from '../../resources/social-media-logos/logo_facebook.png';
 import youtubeLogo from '../../resources/social-media-logos/logo_youtube.png';
 import instagramLogo from '../../resources/social-media-logos/logo_instagram.png';
+import twitterLogo from '../../resources/social-media-logos/logo_twitter.png';
+
 
 
 const ComingSoonPage = () => {
@@ -55,6 +57,8 @@ const ComingSoonPage = () => {
                 <SocialMediaIcon imgPath={facebookLogo} alt="404" url="https://www.facebook.com/MMBoard-games-109974308153448"/>
                 <SocialMediaIcon imgPath={instagramLogo} alt="404" url="https://www.instagram.com/mmboardgames/"/>
                 <SocialMediaIcon imgPath={youtubeLogo} alt="404" url="https://www.youtube.com/channel/UC45loD9mz_LIyZmzTFX0oEw/featured"/>
+                <SocialMediaIcon imgPath={twitterLogo} alt="404" url="https://twitter.com/board_mm"/>
+
             </div>
         </div>
     );
