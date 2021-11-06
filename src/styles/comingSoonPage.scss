@@ -1,74 +1,92 @@
 .coming-soon-page {
     height: 100%;
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
 
     .content{
         height: 80%;
-        padding: 0 9rem;
-
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
 
+        //tablets - portrait
+        @media only screen and (min-device-width : 768px) 
+        and (max-device-width : 1024px) 
+        and (orientation : portrait) {
+            flex-wrap: wrap;
+        }
+
+        //Desktops and laptops
+        @media only screen  and (min-width : 1224px) {
+                flex-direction: row;
+        }
+
         .jumper-img-container {
-            mask-image: 
+            display: none;
+
+            //Desktops and laptops
+            @media only screen  and (min-width : 1224px) {
+                display: unset;
+                max-width: 20rem;
+
+                mask-image: 
                 linear-gradient(
                     to top,
                     rgba(0, 0, 0, 0) 0em,
                     rgba(0, 0, 0, 1) 6em);
 
-            -webkit-mask-image: 
-                linear-gradient(
+                -webkit-mask-image: 
+                    linear-gradient(
                     to top,
                     rgba(0, 0, 0, 0) 0em,
                     rgba(0, 0, 0, 1) 6em);
-
-            @media only screen and (max-width: 1080px) {
-                display: none;
             }
-            
         }
 
         .signup-form-and-title-container {
-            height: 20%;
+            height: 5rem;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            margin-bottom: 2rem;
+            margin: 0 2rem;
 
             .gameTitle-container{
-                @media only screen and (max-width: 768px) {
-                    display: none;
+                display: none;
+
+                //Desktops and laptops
+                @media only screen  and (min-width : 1224px) {
+                    display: unset;
                 }
             }
 
             .signup-form-container{
-                width: 70%;
-            }
-        }
+                width: 15rem;
 
-        @media only screen and (max-width: 768px) {
-            padding: 0;
-            flex-direction: column;
-            justify-content: space-evenly;
+                //tablets - portrait
+                @media only screen and (min-device-width : 768px) 
+                and (max-device-width : 1024px) 
+                and (orientation : portrait) {
+                    width: 25rem;
+                }
+            }
         }
     }
 
     .social-media-container{
         height: 10%;
+        margin-top: 2rem;
 
         display: flex;
         align-items: center;
-        justify-content: space-evenly;
+        justify-content: center;
 
-        @media only screen and (max-width: 480px) {
-            height: 5%;
+        //tablets - portrait
+        @media only screen and (min-device-width : 768px) 
+        and (max-device-width : 1024px) 
+        and (orientation : portrait) {
+           height: 5rem;
         }
     }
 }

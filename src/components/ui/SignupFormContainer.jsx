@@ -1,5 +1,4 @@
 import React from 'react';
-import '../../styles/signupFormContainer.scss'
 import MailchimpSubscribe from "react-mailchimp-subscribe";
 import SignupForm from './SignupForm';
 
