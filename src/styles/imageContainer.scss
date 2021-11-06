@@ -3,18 +3,6 @@
     max-width: 33rem;
     object-fit: fill;
 
-    mask-image: linear-gradient(
-    to top,
-    rgba(0, 0, 0, 0) 0em,
-    rgba(0, 0, 0, 1) 6em);
-
-    -webkit-mask-image: 
-    linear-gradient(
-      to top,
-      rgba(0, 0, 0, 0) 0em,
-      rgba(0, 0, 0, 1) 6em);
-
-
     @media only screen and (max-width: 480px) {
         max-width: 21rem;
     }
