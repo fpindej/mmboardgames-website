@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import FormResponseEnum from '../../../enums/FormResponseEnum';
+
 import '../../../styles/signupForm.scss';
 
 const SignupForm = ({ status, message, onValidated }) => {
@@ -12,7 +14,7 @@ const SignupForm = ({ status, message, onValidated }) => {
       state.email.indexOf("@") > -1 &&
       onValidated({
         EMAIL: state.email,
-        MERGE1: state.firstName,
+        FIRSTNAME: state.firstName,
       });
   }
 
@@ -20,17 +22,17 @@ const SignupForm = ({ status, message, onValidated }) => {
     <form className="signup-form">
       <h3 className="form-title">Join our newsletter!</h3>
 
-      {status === "sending" && (
+      {status === FormResponseEnum.sending && (
         <div>
           Sending...
         </div>
       )}
-      {status === "error" && (
+      {status === FormResponseEnum.error && (
         <div>
           Already subscribed
         </div>
       )}
-      {status === "success" && (
+      {status === FormResponseEnum.success && (
         <div>
           Thank You for subscribing!
         </div>
@@ -44,7 +46,6 @@ const SignupForm = ({ status, message, onValidated }) => {
           type="text"
           value={state.firstName}
           placeholder="Your first name"
-          isRequired
         />
 
         <input
@@ -54,7 +55,6 @@ const SignupForm = ({ status, message, onValidated }) => {
           type="email"
           value={state.email}
           placeholder="Your email"
-          isRequired
         />
 
         <input
