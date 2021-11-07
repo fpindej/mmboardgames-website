@@ -7,8 +7,8 @@ import JumperImgConstant from '../../constants/JumperImgConstants';
 import HttpResponseCodes from '../../constants/HttpResponseCodesConstants';
 import { randomArrayIndex } from '../../utils/RandomNumberGenerator';
 
-import boardGameImg from '../../resources/img_boxWithFigure.png';
-import gameTitleImg from '../../resources/img_gameTitle.png'
+import boardGameImg from '../../resources/img_boxWithFigure-min.png';
+import gameTitleImg from '../../resources/img_gameTitle-min.png'
 import Footer from '../ui/Footer';
 
 import '../../styles/comingSoonPage.scss';
