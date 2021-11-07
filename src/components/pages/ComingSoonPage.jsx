@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 
-import ImageContainer from '../ui/ImageContainer';
-import GameLogoContainer from '../ui/GameLogoContainer';
-import SignupFormContainer from '../ui/SignupFormContainer';
+import ImageContainer from '../ui/image/ImageContainer';
+import GameLogoContainer from '../ui/image/GameLogoContainer';
+import SignupFormContainer from '../ui/form/SignupFormContainer';
 import JumperImgConstant from '../../constants/JumperImgConstants';
 import HttpStatusCodesConstatns from '../../constants/HttpStatusCodesConstatns';
 import { randomArrayIndex } from '../../utils/RandomNumberGenerator';

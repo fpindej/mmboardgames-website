@@ -1,5 +1,5 @@
 import React from 'react';
-import SocialMediaIcon from './SocialMediaIcon';
+import SocialMediaIcon from './image/SocialMediaIcon';
 import HttpStatusCodesConstatns from '../../constants/HttpStatusCodesConstatns';
 import SocialMediaLinks from '../../constants/SocialMediaLinksConstats';
 
