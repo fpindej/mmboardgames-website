@@ -1,6 +1,6 @@
 import React from 'react';
 import SocialMediaIcon from './image/SocialMediaIcon';
-import HttpStatusCodesConstatns from '../../constants/HttpStatusCodesConstatns';
+import HttpStatusCodesConstatns from '../../constants/HttpResponseCodesConstants';
 import SocialMediaLinks from '../../constants/SocialMediaLinksConstats';
 
 import facebookLogo from '../../resources/social-media-logos/logo_facebook.png';
@@ -11,10 +11,10 @@ import twitterLogo from '../../resources/social-media-logos/logo_twitter.png';
 const Footer = () => {
     return (
         <>
-            <SocialMediaIcon imgPath={facebookLogo} alt={HttpStatusCodesConstatns.notFound} url={SocialMediaLinks.facebook} />
-            <SocialMediaIcon imgPath={instagramLogo} alt={HttpStatusCodesConstatns.notFound} url={SocialMediaLinks.instagram} />
-            <SocialMediaIcon imgPath={youtubeLogo} alt={HttpStatusCodesConstatns.notFound} url={SocialMediaLinks.youtube} />
-            <SocialMediaIcon imgPath={twitterLogo} alt={HttpStatusCodesConstatns.notFound} url={SocialMediaLinks.twitter} />
+            <SocialMediaIcon imgPath={facebookLogo} alt={HttpStatusCodesConstatns.NotFound} url={SocialMediaLinks.Facebook} />
+            <SocialMediaIcon imgPath={instagramLogo} alt={HttpStatusCodesConstatns.NotFound} url={SocialMediaLinks.Instagram} />
+            <SocialMediaIcon imgPath={youtubeLogo} alt={HttpStatusCodesConstatns.NotFound} url={SocialMediaLinks.Youtube} />
+            <SocialMediaIcon imgPath={twitterLogo} alt={HttpStatusCodesConstatns.NotFound} url={SocialMediaLinks.Twitter} />
         </>
     );
 };

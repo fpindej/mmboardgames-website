@@ -1,7 +1,7 @@
 const FormResponseEnum = {
-    sending: 'sending',
-    error: 'error',
-    success: 'success'
+    Sending: 'sending',
+    Error: 'error',
+    Success: 'success'
 }
 
 export default FormResponseEnum;

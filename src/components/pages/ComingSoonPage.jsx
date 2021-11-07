@@ -4,7 +4,7 @@ import ImageContainer from '../ui/image/ImageContainer';
 import GameLogoContainer from '../ui/image/GameLogoContainer';
 import SignupFormContainer from '../ui/form/SignupFormContainer';
 import JumperImgConstant from '../../constants/JumperImgConstants';
-import HttpStatusCodesConstatns from '../../constants/HttpStatusCodesConstatns';
+import HttpResponseCodes from '../../constants/HttpResponseCodesConstants';
 import { randomArrayIndex } from '../../utils/RandomNumberGenerator';
 
 import boardGameImg from '../../resources/img_boxWithFigure.png';
@@ -20,14 +20,14 @@ const ComingSoonPage = () => {
         <div className="coming-soon-page">
             <div className="content">
                 <div className="box-img-container">
-                    <ImageContainer imgPath={boardGameImg} alt={HttpStatusCodesConstatns.notFound} />
+                    <ImageContainer imgPath={boardGameImg} alt={HttpResponseCodes.NotFound} />
                 </div>
                 <div className="jumper-img-container">
-                    <ImageContainer imgPath={JumperImgConstant[imgIndex]} alt={HttpStatusCodesConstatns.notFound} />
+                    <ImageContainer imgPath={JumperImgConstant[imgIndex]} alt={HttpResponseCodes.NotFound} />
                 </div>
                 <div className="signup-form-and-title-container">
                     <div className="gameTitle-container">
-                        <GameLogoContainer imgPath={gameTitleImg} alt={HttpStatusCodesConstatns.notFound} />
+                        <GameLogoContainer imgPath={gameTitleImg} alt={HttpResponseCodes.NotFound} />
                     </div>
                     <div className="signup-form-container">
                         <SignupFormContainer />
