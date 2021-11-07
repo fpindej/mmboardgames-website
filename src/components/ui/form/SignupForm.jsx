@@ -4,7 +4,7 @@ import FormResponseEnum from '../../../enums/FormResponseEnum';
 import '../../../styles/signupForm.scss';
 
 const SignupForm = ({ status, message, onValidated }) => {
-
+// eslint-disable-next-line
   const [state, setState] = useState({ email: '', firstName: '' });
 
   const handleSubmit = (e) => {
