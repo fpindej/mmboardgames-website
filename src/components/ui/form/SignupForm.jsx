@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import FormResponseEnum from '../../../enums/FormResponseEnum';
 
 import '../../../styles/signupForm.scss';
@@ -6,6 +6,30 @@ import '../../../styles/signupForm.scss';
 const SignupForm = ({ status, message, onValidated }) => {
 // eslint-disable-next-line
   const [state, setState] = useState({ email: '', firstName: '' });
+  const [buttonClass, setButtonClass] = useState('');
+  const [buttonValue, setButtonValue] = useState('SIGN UP');
+
+  useEffect(() => {
+    switch(status) {
+      case FormResponseEnum.Sending:
+        setButtonClass("sending");
+        setButtonValue("SENDING")
+        break;
+
+      case FormResponseEnum.Error:
+        setButtonClass("error");
+        setButtonValue("ALREADY SUBSCRIBED")
+        break;
+
+      case FormResponseEnum.Success:
+        setButtonClass("success");
+        setButtonValue("SUBSCRIBED")
+        break;
+
+      default:
+        setButtonClass("");
+    }
+  }, [status]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -21,22 +45,6 @@ const SignupForm = ({ status, message, onValidated }) => {
   return (
     <form className="signup-form">
       <h3 className="form-title">Join our newsletter!</h3>
-
-      {status === FormResponseEnum.Sending && (
-        <div>
-          Sending...
-        </div>
-      )}
-      {status === FormResponseEnum.Error && (
-        <div>
-          Already subscribed
-        </div>
-      )}
-      {status === FormResponseEnum.Success && (
-        <div>
-          Thank You for subscribing!
-        </div>
-      )}
 
       <div className="form-container">
         <input
@@ -58,9 +66,9 @@ const SignupForm = ({ status, message, onValidated }) => {
         />
 
         <input
-          className="submit-button"
+          className={"submit-button " + buttonClass}
           label="subscribe"
-          value="SIGN UP"
+          value={buttonValue}
           type="submit"
           onClick={(e) => handleSubmit(e)}
         />
