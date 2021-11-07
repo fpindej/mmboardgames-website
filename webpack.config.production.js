@@ -3,7 +3,6 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const Dotenv = require('dotenv-webpack');
 const TerserPlugin = require('terser-webpack-plugin');
 const ImageMinimizerPlugin = require("image-minimizer-webpack-plugin");
-const { extendDefaultPlugins } = require("svgo");
 
 module.exports = {
     mode: 'production',
@@ -70,24 +69,6 @@ module.exports = {
                 ["gifsicle", { interlaced: true }],
                 ["jpegtran", { progressive: true }],
                 ["optipng", { optimizationLevel: 5 }],
-                // Svgo configuration here https://github.com/svg/svgo#configuration
-                [
-                  "svgo",
-                  {
-                    // plugins: extendDefaultPlugins([
-                    //   {
-                    //     name: "removeViewBox",
-                    //     active: false,
-                    //   },
-                    //   {
-                    //     name: "addAttributesToSVGElement",
-                    //     params: {
-                    //       attributes: [{ xmlns: "http://www.w3.org/2000/svg" }],
-                    //     },
-                    //   },
-                    // ]),
-                  },
-                ],
               ],
             },
           }),
