@@ -1,0 +1,1 @@
+export const randomArrayIndex = (arrLength = 0) => Math.floor(Math.random() * arrLength);

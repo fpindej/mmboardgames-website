@@ -1,29 +1,26 @@
-import React, { useEffect, useState } from 'react';
-import '../../styles/comingSoonPage.scss';
+import React, { useState } from 'react';
+
 import ImageContainer from '../ui/ImageContainer';
 import GameLogoContainer from '../ui/GameLogoContainer';
 import SignupFormContainer from '../ui/SignupFormContainer';
 import JumperImgConstant from '../../constants/JumperImgConstants';
 import HttpStatusCodesConstatns from '../../constants/HttpStatusCodesConstatns';
+import { randomArrayIndex } from '../../utils/RandomNumberGenerator';
 
 import boardGameImg from '../../resources/img_boxWithFigure.png';
 import gameTitleImg from '../../resources/img_gameTitle.png'
 import Footer from '../ui/Footer';
 
-const ComingSoonPage = () => {
-    const [imgIndex, setImgIndex] = useState(0);
+import '../../styles/comingSoonPage.scss';
 
-    useEffect(() => {
-        const randomIndex = Math.floor(Math.random() * JumperImgConstant.length);
-        setImgIndex(randomIndex);
-    }, [JumperImgConstant.length]);
+const ComingSoonPage = () => {
+    const [imgIndex, setImgIndex] = useState(randomArrayIndex(JumperImgConstant.length));
 
     return (
         <div className="coming-soon-page">
             <div className="content">
                 <div className="box-img-container">
                     <ImageContainer imgPath={boardGameImg} alt={HttpStatusCodesConstatns.notFound} />
-
                 </div>
                 <div className="jumper-img-container">
                     <ImageContainer imgPath={JumperImgConstant[imgIndex]} alt={HttpStatusCodesConstatns.notFound} />
@@ -38,7 +35,7 @@ const ComingSoonPage = () => {
                 </div>
             </div>
             <div className="social-media-container">
-              <Footer /> 
+                <Footer />
             </div>
         </div>
     );
