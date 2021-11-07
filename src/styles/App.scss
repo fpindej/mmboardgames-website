@@ -15,22 +15,3 @@ html, body
     background-image: url(../resources/img_background.jpg);  
     background-size: cover;
 }
-
-.flake {
-  color: rgb(247, 252, 243);
-  font-size: 2rem;
-  padding: 1rem;
-  animation: fall 2s linear forwards infinite;
-  animation-delay: 1s;
-}
-
-/* animating snowflake in Y-axis  */
-
-@keyframes fall {
-  from {
-    transform: translateY(-10vh);
-  }
-  to {
-    transform: translateY(100vh);
-  }
-}
