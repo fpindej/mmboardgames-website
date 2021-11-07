@@ -3,6 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const Dotenv = require('dotenv-webpack');
 
 module.exports = {
+  mode: 'development',
   entry: path.join(__dirname, "src", "index.js"),
   output: {
     path:path.resolve(__dirname, "dist"),
@@ -36,8 +37,8 @@ module.exports = {
         ],
       },
       {
-        test: /\.(png|jp(e*)g|svg|gif)$/,
-        use: ['file-loader'],
+        test: /\.(png|jp(e*)g|svg|gif|ico)$/,
+        use: ['file-loader?name=[name].[ext]'],
       },
       {
         test: /\.svg$/,
@@ -48,6 +49,8 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: path.join(__dirname, "public", "index.html"),
+      filename: './index.html',
+      favicon: './public/favicon.ico'
     }),
     new Dotenv(),
   ],

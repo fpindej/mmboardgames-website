@@ -16,8 +16,9 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
-    "start": "webpack serve --config ./webpack.config.js --mode development",
-    "build": "webpack",
+    "start": "webpack serve --config ./webpack.config.development.js --mode development",
+    "build:dev": "webpack --config ./webpack.config.development.js --mode development",
+    "build:prod": "webpack --config ./webpack.config.production.js --mode production",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -45,8 +46,14 @@
     "@babel/preset-react": "^7.16.0",
     "babel-loader": "^8.2.3",
     "html-webpack-plugin": "^5.5.0",
+    "image-minimizer-webpack-plugin": "^2.2.0",
+    "imagemin-gifsicle": "^7.0.0",
+    "imagemin-jpegtran": "^7.0.0",
+    "imagemin-optipng": "^8.0.0",
+    "imagemin-svgo": "^10.0.0",
     "sass": "^1.43.4",
     "scss": "^0.2.4",
+    "terser-webpack-plugin": "^5.2.4",
     "webpack": "^5.62.1",
     "webpack-cli": "^4.9.1",
     "webpack-dev-server": "^4.4.0"

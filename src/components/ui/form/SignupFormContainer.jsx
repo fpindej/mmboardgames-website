@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import MailchimpSubscribe from "react-mailchimp-subscribe";
 import SignupForm from './SignupForm';
 

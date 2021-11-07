@@ -1,6 +1,7 @@
 import React from 'react';
-import './styles/App.scss';
 import ComingSoonPage from './components/pages/ComingSoonPage';
+import '../public/favicon.ico';
+import './styles/App.scss';
 
 function App() {
   return (
