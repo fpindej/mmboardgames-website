@@ -2,7 +2,12 @@
     margin: 0 1rem;
     max-height: 6rem;
     object-fit: fill;
-    
+    transition: all .2s ease-in-out;
+
+    &:hover {
+        transform: scale(1.3);
+    }
+
     @media only screen and (max-width: 480px) {
         max-height: 3.5rem;
     }
