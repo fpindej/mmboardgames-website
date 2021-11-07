@@ -42,4 +42,16 @@
         
         -webkit-appearance: none;
     }
+
+    .submit-button.sending {
+        background-color: #DBE320;
+    }
+
+    .submit-button.error {
+        background-color: red;
+    }
+
+    .submit-button.success {
+        background-color: green;
+    }
 }
