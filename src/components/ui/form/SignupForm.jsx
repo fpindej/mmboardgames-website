@@ -14,7 +14,7 @@ const SignupForm = ({ status, message, onValidated }) => {
       state.email.indexOf("@") > -1 &&
       onValidated({
         EMAIL: state.email,
-        FIRSTNAME: state.firstName,
+        MERGE1: state.firstName,
       });
   }
 
@@ -22,17 +22,17 @@ const SignupForm = ({ status, message, onValidated }) => {
     <form className="signup-form">
       <h3 className="form-title">Join our newsletter!</h3>
 
-      {status === FormResponseEnum.sending && (
+      {status === FormResponseEnum.Sending && (
         <div>
           Sending...
         </div>
       )}
-      {status === FormResponseEnum.error && (
+      {status === FormResponseEnum.Error && (
         <div>
           Already subscribed
         </div>
       )}
-      {status === FormResponseEnum.success && (
+      {status === FormResponseEnum.Success && (
         <div>
           Thank You for subscribing!
         </div>
