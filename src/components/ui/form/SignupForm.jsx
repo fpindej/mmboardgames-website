@@ -6,30 +6,33 @@ import '../../../styles/signupForm.scss';
 const SignupForm = ({ status, message, onValidated }) => {
 // eslint-disable-next-line
   const [state, setState] = useState({ email: '', firstName: '' });
-  const [buttonClass, setButtonClass] = useState('');
-  const [buttonValue, setButtonValue] = useState('SIGN UP');
+  const [buttonState, setButtonState] = useState({ className: '', value: 'SIGN UP'});
 
   useEffect(() => {
     switch(status) {
       case FormResponseEnum.Sending:
-        setButtonClass("sending");
-        setButtonValue("SENDING")
+        setButtonState( {className: 'sending', value: 'SENDING'});
         break;
 
       case FormResponseEnum.Error:
-        setButtonClass("error");
-        setButtonValue("ALREADY SUBSCRIBED")
+        setButtonState( {className: 'error', value: 'ALREADY SUBSCRIBED'});
+        setTimeout(() => {
+          setButtonState( {className: '', value: 'SIGN UP'});
+        }, 2500);
         break;
 
       case FormResponseEnum.Success:
-        setButtonClass("success");
-        setButtonValue("SUBSCRIBED")
+        setButtonState( {className: 'success', value: 'SUBSCRIBED'});
+        setTimeout(() => {
+          setButtonState( {className: '', value: 'SIGN UP'});
+        }, 2500);
         break;
 
       default:
-        setButtonClass("");
+        setButtonState( {className: '', value: 'SIGN UP'});
     }
   }, [status]);
+
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -66,9 +69,9 @@ const SignupForm = ({ status, message, onValidated }) => {
         />
 
         <input
-          className={"submit-button " + buttonClass}
+          className={"submit-button " + buttonState.className}
           label="subscribe"
-          value={buttonValue}
+          value={buttonState.value}
           type="submit"
           onClick={(e) => handleSubmit(e)}
         />
