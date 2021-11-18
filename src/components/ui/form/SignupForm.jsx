@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import FormResponseEnum from '../../../enums/FormResponseEnum';
 
 import '../../../styles/signupForm.scss';
@@ -6,6 +6,33 @@ import '../../../styles/signupForm.scss';
 const SignupForm = ({ status, message, onValidated }) => {
 // eslint-disable-next-line
   const [state, setState] = useState({ email: '', firstName: '' });
+  const [buttonState, setButtonState] = useState({ className: '', value: 'SIGN UP'});
+
+  useEffect(() => {
+    switch(status) {
+      case FormResponseEnum.Sending:
+        setButtonState( {className: 'sending', value: 'SENDING'});
+        break;
+
+      case FormResponseEnum.Error:
+        setButtonState( {className: 'error', value: 'ALREADY SUBSCRIBED'});
+        setTimeout(() => {
+          setButtonState( {className: '', value: 'SIGN UP'});
+        }, 2500);
+        break;
+
+      case FormResponseEnum.Success:
+        setButtonState( {className: 'success', value: 'SUBSCRIBED'});
+        setTimeout(() => {
+          setButtonState( {className: '', value: 'SIGN UP'});
+        }, 2500);
+        break;
+
+      default:
+        setButtonState( {className: '', value: 'SIGN UP'});
+    }
+  }, [status]);
+
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -21,22 +48,6 @@ const SignupForm = ({ status, message, onValidated }) => {
   return (
     <form className="signup-form">
       <h3 className="form-title">Join our newsletter!</h3>
-
-      {status === FormResponseEnum.Sending && (
-        <div>
-          Sending...
-        </div>
-      )}
-      {status === FormResponseEnum.Error && (
-        <div>
-          Already subscribed
-        </div>
-      )}
-      {status === FormResponseEnum.Success && (
-        <div>
-          Thank You for subscribing!
-        </div>
-      )}
 
       <div className="form-container">
         <input
@@ -58,9 +69,9 @@ const SignupForm = ({ status, message, onValidated }) => {
         />
 
         <input
-          className="submit-button"
+          className={"submit-button " + buttonState.className}
           label="subscribe"
-          value="SIGN UP"
+          value={buttonState.value}
           type="submit"
           onClick={(e) => handleSubmit(e)}
         />
