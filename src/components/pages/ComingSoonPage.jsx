@@ -4,6 +4,7 @@ import ImageContainer from '../ui/image/ImageContainer';
 import GameLogoContainer from '../ui/image/GameLogoContainer';
 import SignupFormContainer from '../ui/form/SignupFormContainer';
 import JumperImgConstant from '../../constants/JumperImgConstants';
+import Warning from '../ui/Warning';
 import HttpResponseCodes from '../../constants/HttpResponseCodesConstants';
 import { randomArrayIndex } from '../../utils/RandomNumberGenerator';
 
@@ -18,6 +19,9 @@ const ComingSoonPage = () => {
 
     return (
         <div className="coming-soon-page">
+            <div className="warning-banner">
+                <Warning />
+            </div>
             <div className="content">
                 <div className="box-img-container">
                     <ImageContainer imgPath={boardGameImg} alt={HttpResponseCodes.NotFound} />
