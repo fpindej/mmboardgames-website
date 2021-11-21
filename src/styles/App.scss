@@ -13,6 +13,36 @@
 html, body
 {
     height: 100%;
+    overflow: hidden;
+}
+
+.app-container {
+    width: 100%;
+    height: 100%;
+    /* CSS Smooth Scroll */
+    overflow-y: scroll; 
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+ 
+  /* Scroll Snap */
+  scroll-snap-align: center;
+}
+
+section#coming-soon {
     background-image: url(../resources/img_background.jpg);  
     background-size: cover;
+}
+
+section#coming-soon-2 {
+  background-color: white;
 }
