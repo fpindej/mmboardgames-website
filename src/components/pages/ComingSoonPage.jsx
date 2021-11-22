@@ -22,7 +22,7 @@ const ComingSoonPage = () => {
             <div className="warning-banner">
                 <Warning />
             </div>
-            <div className="content">
+            <div className="page-content">
                 <div className="box-img-container">
                     <ImageContainer imgPath={boardGameImg} alt={HttpResponseCodes.NotFound} />
                 </div>
