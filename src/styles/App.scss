@@ -3,6 +3,7 @@
 @use './gameLogoContainer.scss';
 @use './socialMediaIcon.scss';
 @use './warning.scss';
+@use './navbar.scss';
 
 * {
     margin: 0;
@@ -19,6 +20,7 @@ html, body
 .app-container {
     width: 100%;
     height: 100%;
+
     /* CSS Smooth Scroll */
     overflow-y: scroll; 
     scroll-behavior: smooth;
@@ -36,13 +38,14 @@ section {
  
   /* Scroll Snap */
   scroll-snap-align: center;
-}
 
-section#coming-soon {
+  &#newsletter {
     background-image: url(../resources/img_background.jpg);  
     background-size: cover;
+  }
+
+  &#about-us {
+    background-color: white;
+  }
 }
 
-section#coming-soon-2 {
-  background-color: white;
-}
