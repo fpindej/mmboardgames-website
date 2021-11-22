@@ -17,14 +17,33 @@ html, body
     overflow: hidden;
 }
 
-.app-container {
+.app {
+  display: flex;
+  flex-direction: column;
+
+  .navbar {
     width: 100%;
-    height: 100%;
+    height: 5vh;
+
+    position: sticky;
+    top: 0px;
+    z-index: 1000;
+    box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.15);
+
+    display: flex;
+    justify-content: flex-end;
+    background-color: #26828c;
+  }
+
+  .content {
+    width: 100%;
+    height: 95vh;
 
     /* CSS Smooth Scroll */
     overflow-y: scroll; 
     scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
+}
 }
 
 section {
@@ -32,8 +51,6 @@ section {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  text-align: center;
-  width: 100%;
   height: 100%;
  
   /* Scroll Snap */
@@ -48,4 +65,3 @@ section {
     background-color: white;
   }
 }
-

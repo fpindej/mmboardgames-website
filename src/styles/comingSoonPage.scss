@@ -1,6 +1,7 @@
 .coming-soon-page {
-    height: 100vh;
+    height: 100%;
     width: 100%;
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -32,6 +33,7 @@
 
     .content{
         height: 60%;
+
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
@@ -73,11 +75,12 @@
 
         .signup-form-and-title-container {
             height: 4rem;
+            margin: 4rem 2rem;
+
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            margin: 4rem 2rem;
 
             .gameTitle-container{
                 display: none;
@@ -109,8 +112,8 @@
     }
 
     .social-media-container{
-        height: 10%;
-        margin-top: 2rem;
+        height: 1.3rem;
+        margin-top: 1rem;
 
         display: flex;
         align-items: center;
@@ -121,6 +124,11 @@
         and (max-device-width : 1024px) 
         and (orientation : portrait) {
            height: 10rem;
+        }
+
+        //Desktops and laptops
+        @media only screen  and (min-width : 1224px) {
+            height: 10rem;
         }
     }
 }
