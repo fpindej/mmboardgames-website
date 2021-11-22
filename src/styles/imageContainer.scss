@@ -1,13 +1,13 @@
 .image-container {
-    max-height: 27rem;
-    max-width: 33rem;
+    max-width: 30vw;
+    max-height: 35vh;
     object-fit: fill;
 
-    @media only screen and (max-width: 480px) {
-        max-width: 21rem;
-    }
+    // @media only screen and (max-width: 480px) {
+    //     max-width: 21rem;
+    // }
 
-    @media only screen and (max-width: 360px) {
-        max-width: 15rem;
-    }
+    // @media only screen and (max-width: 360px) {
+    //     max-width: 15rem;
+    // }
 }
