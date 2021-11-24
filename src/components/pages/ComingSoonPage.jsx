@@ -9,7 +9,6 @@ import HttpResponseCodes from '../../constants/HttpResponseCodesConstants';
 import { randomArrayIndex } from '../../utils/RandomNumberGenerator';
 
 import boardGameImg from '../../resources/img_boxWithFigure.png';
-import gameTitleImg from '../../resources/img_gameTitle.png'
 import Footer from '../ui/Footer';
 
 import '../../styles/comingSoonPage.scss';
@@ -31,7 +30,7 @@ const ComingSoonPage = () => {
                 </div>
                 <div className="signup-form-and-title-container">
                     <div className="gameTitle-container">
-                        <GameLogoContainer imgPath={gameTitleImg} alt={HttpResponseCodes.NotFound} />
+                        <GameLogoContainer />
                     </div>
                     <div className="signup-form-container">
                         <SignupFormContainer />
