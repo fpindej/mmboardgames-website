@@ -1,7 +1,7 @@
-import Jumper1Img from '../resources/jumpers/img_jumper1.png';
-import Jumper2Img from '../resources/jumpers/img_jumper2.png';
-import Jumper3Img from '../resources/jumpers/img_jumper3.png';
-import Jumper4Img from '../resources/jumpers/img_jumper4.png';
+import Jumper1Img from '../resources/jumpers/img_jumper1-min.png';
+import Jumper2Img from '../resources/jumpers/img_jumper2-min.png';
+import Jumper3Img from '../resources/jumpers/img_jumper3-min.png';
+import Jumper4Img from '../resources/jumpers/img_jumper4-min.png';
 
 const JumperImgConstant = [
     Jumper1Img,
