@@ -1,9 +1,14 @@
+@use './pages/homePage.scss';
+@use './pages/aboutPage.scss';
+@use './pages/aboutUsPage.scss';
+@use './pages/comingSoonPage.scss';
+
 @use './signupForm.scss';
 @use './imageContainer.scss';
 @use './gameLogoContainer.scss';
 @use './socialMediaIcon.scss';
 @use './warning.scss';
-@use './navbar.scss';
+@use './footer.scss';
 
 * {
     margin: 0;
@@ -13,55 +18,59 @@
 
 html, body
 {
+    font-family: Nexa;
     height: 100%;
     overflow: hidden;
+
+    h1 {
+      margin-bottom: 1rem;
+    }
 }
 
 .app {
-  display: flex;
-  flex-direction: column;
-
-  .navbar {
     width: 100%;
-    height: 5vh;
-
-    position: sticky;
-    top: 0px;
-    z-index: 1000;
-    box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.15);
-
-    display: flex;
-    justify-content: flex-end;
-    background-color: #26828c;
-  }
-
-  .content {
-    width: 100%;
-    height: 95vh;
+    height: 100vh;
 
     /* CSS Smooth Scroll */
     overflow-y: scroll; 
     scroll-behavior: smooth;
-    scroll-snap-type: y mandatory;
-}
 }
 
 section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
- 
-  /* Scroll Snap */
-  scroll-snap-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+  
+    /* Scroll Snap */
+    scroll-snap-align: center;
 
-  &#newsletter {
-    background-image: url(../resources/img_background.jpg);  
-    background-size: cover;
-  }
+    &#home-section {
+      background-image: url(../resources/img_background.jpg);  
+      background-size: cover;
+      background-position:center;
+      background-repeat: no-repeat;
+    }
 
-  &#about-us {
-    background-color: white;
-  }
+    &#about-game-section {
+      background-image: url(../resources/img_background.jpg);  
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    &#about-us-section {
+      background-image: url(../resources/img_background.jpg);  
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    &#coming-soon-section {
+      background-image: url(../resources/img_background.jpg);  
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
 }

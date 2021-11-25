@@ -1,7 +1,7 @@
 import React from 'react';
 import '../../../styles/gameLogoContainer.scss';
-import HttpResponseCodes from '../../../constants/HttpResponseCodesConstants';
 
+import HttpResponseCodes from '../../../constants/HttpResponseCodesConstants';
 import gameTitleImg from '../../../resources/img_gameTitle.png'
 
 const GameLogoContainer = () => {

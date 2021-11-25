@@ -1,12 +1,12 @@
 .game-logo-container{
-    margin: 1rem;
-    max-height: 10vh;
-    max-width: 30vw;
+    width: 100%;
+    padding: .25em;
+    object-fit: fill;
 
      //tablets - portrait
-     @media only screen and (min-device-width : 768px) 
-     and (max-device-width : 1024px) 
-     and (orientation : portrait) {
-         max-height: 7rem;
-     }
+    //  @media only screen and (min-device-width : 768px) 
+    //  and (max-device-width : 1024px) 
+    //  and (orientation : portrait) {
+    //      max-height: 7rem;
+    //  }
 }

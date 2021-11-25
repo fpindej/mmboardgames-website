@@ -1,45 +1,32 @@
-import React, { useState } from 'react';
+import React from 'react';
+import '../../styles/pages/comingSoonPage.scss';
 
 import ImageContainer from '../ui/image/ImageContainer';
-import GameLogoContainer from '../ui/image/GameLogoContainer';
 import SignupFormContainer from '../ui/form/SignupFormContainer';
-import JumperImgConstant from '../../constants/JumperImgConstants';
-import Warning from '../ui/Warning';
+import JumperImg from '../../resources/jumpers/img_jumper1.png';
 import HttpResponseCodes from '../../constants/HttpResponseCodesConstants';
-import { randomArrayIndex } from '../../utils/RandomNumberGenerator';
 
 import boardGameImg from '../../resources/img_boxWithFigure.png';
 import Footer from '../ui/Footer';
 
-import '../../styles/comingSoonPage.scss';
 
 const ComingSoonPage = () => {
-    const [imgIndex, setImgIndex] = useState(randomArrayIndex(JumperImgConstant.length));
-
     return (
         <div className="coming-soon-page">
-            <div className="warning-banner">
-                <Warning />
-            </div>
-            <div className="page-content">
                 <div className="box-img-container">
                     <ImageContainer imgPath={boardGameImg} alt={HttpResponseCodes.NotFound} />
                 </div>
                 <div className="jumper-img-container">
-                    <ImageContainer imgPath={JumperImgConstant[imgIndex]} alt={HttpResponseCodes.NotFound} />
+                    <ImageContainer imgPath={JumperImg} alt={HttpResponseCodes.NotFound} />
                 </div>
-                <div className="signup-form-and-title-container">
-                    <div className="gameTitle-container">
-                        <GameLogoContainer />
-                    </div>
+                <div className="media-stack">
                     <div className="signup-form-container">
                         <SignupFormContainer />
                     </div>
+                    <div className="social-media-container">
+                        <Footer />
+                    </div>
                 </div>
-            </div>
-            <div className="social-media-container">
-                <Footer />
-            </div>
         </div>
     );
 };

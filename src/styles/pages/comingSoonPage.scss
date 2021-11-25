@@ -1,0 +1,67 @@
+.coming-soon-page {
+    height: 100vh;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    //Desktops and laptops
+    @media only screen  and (min-width : 1224px) {
+        flex-direction: row;
+        justify-content: space-evenly;
+
+
+    }
+
+    .box-img-container {
+        display: none;
+    }
+    
+    .jumper-img-container {
+       max-width: 50%;
+       max-height: 50%;
+       margin: 1rem 1rem 2rem 1rem;
+
+       mask-image: 
+       linear-gradient(
+           to top,
+           rgba(0, 0, 0, 0) 0em,
+           rgba(0, 0, 0, 1) 9em);
+
+       -webkit-mask-image: 
+           linear-gradient(
+           to top,
+           rgba(0, 0, 0, 0) 0em,
+           rgba(0, 0, 0, 1) 9em);
+
+        //Desktops and laptops
+        @media only screen  and (min-width : 1224px) {
+            max-height: 80%;
+        }
+    }
+
+    .media-stack {
+        width: 80%;
+        //Desktops and laptops
+        @media only screen  and (min-width : 1224px) {
+            width: 25%;
+        }
+    
+        .signup-form-container{
+            width: 100%;
+        }
+
+        .social-media-container{
+            height: 2.5rem;
+            margin-top: 4rem;
+            
+            //Desktops and laptops
+            @media only screen  and (min-width : 1224px) {
+                margin-top: 2.5rem;
+                height: 3.5rem;
+            }
+        }
+    }
+}

@@ -4,7 +4,7 @@ import SignupForm from './SignupForm';
 
 const MailchimpFormContainer = () => {
     //TODO hide this in env
-    const postUrl = 'https://slmail.us5.list-manage.com/subscribe/post?u=76a06c328943286a2f6826939&amp;id=00fbc95a3e';
+    const postUrl = 'https://mmboardgames.us20.list-manage.com/subscribe/post?u=9cfdb8e59cfc6ed34ca3aaede&amp;id=04fb1cf7b9';
 
     return (
         <div className="mc__form-container">

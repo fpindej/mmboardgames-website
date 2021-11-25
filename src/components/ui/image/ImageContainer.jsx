@@ -2,9 +2,9 @@ import React from 'react';
 import '../../../styles/imageContainer.scss';
 
 
-const ImageContainer = ({ imgPath, altPath }) => {
+const ImageContainer = ({ imgPath, altPath, className="" }) => {
     return (
-        <img className="image-container" src={imgPath} alt={altPath} />
+        <img className={`${className} image-container`} src={imgPath} alt={altPath} />
     );
 }
 

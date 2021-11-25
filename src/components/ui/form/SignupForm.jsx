@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
+import '../../../styles/signupForm.scss';
+
 import FormResponseEnum from '../../../enums/FormResponseEnum';
 
-import '../../../styles/signupForm.scss';
 
 const SignupForm = ({ status, message, onValidated }) => {
 // eslint-disable-next-line

@@ -1,24 +1,27 @@
 import './styles/App.scss';
+import HomePage from './components/pages/HomePage';
+import AboutPage from './components/pages/AboutPage';
+import AboutUsPage from './components/pages/AboutUsPage';
 import ComingSoonPage from './components/pages/ComingSoonPage';
-import Navbar from './components/ui/Navbar';
 
 function App() {
   return (
     <div className="app">
-        <Navbar />
-        <div className="content">
-          <section id="newsletter">
-            <ComingSoonPage />
-          </section>
+        <section id="home-section">
+          <HomePage />
+        </section>
 
-          <section id="about-us">
-            <ComingSoonPage />
-          </section>
+        <section id="about-game-section">
+          <AboutPage />
+        </section>
 
-          <section id="about-us2">
-            <ComingSoonPage />
-          </section>
-      </div>
+        <section id="about-us-section">
+          <AboutUsPage />
+        </section>
+
+        <section id="coming-soon-section">
+          <ComingSoonPage />
+        </section>
     </div>
   );
 }

@@ -1,0 +1,17 @@
+.about-game-page {
+    height: 100%;
+
+    margin: 2rem 1rem;
+    word-wrap: break-word;
+    line-height: 1.625em;
+    word-break: normal;
+
+    //Desktops and laptops
+    @media only screen  and (min-width : 1224px) {
+        width: 50%;
+    }
+
+    p {
+        margin-bottom: 1em;
+    }
+}
