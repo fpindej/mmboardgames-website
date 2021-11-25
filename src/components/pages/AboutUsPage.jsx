@@ -1,7 +1,7 @@
 import React from 'react';
 import '../../styles/pages/aboutUsPage.scss';
 
-import dudesImg from '../../resources/creators.png';
+import dudesImg from '../../resources/creators.webp';
 import ImageContainer from '../ui/image/ImageContainer';
 import HttpResponseCodes from '../../constants/HttpResponseCodesConstants';
 

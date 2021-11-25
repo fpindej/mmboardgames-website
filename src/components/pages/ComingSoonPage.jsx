@@ -3,10 +3,10 @@ import '../../styles/pages/comingSoonPage.scss';
 
 import ImageContainer from '../ui/image/ImageContainer';
 import SignupFormContainer from '../ui/form/SignupFormContainer';
-import JumperImg from '../../resources/jumpers/img_jumper1.png';
+import JumperImg from '../../resources/jumpers/img_jumper1.webp';
 import HttpResponseCodes from '../../constants/HttpResponseCodesConstants';
 
-import boardGameImg from '../../resources/img_boxWithFigure.png';
+import boardGameImg from '../../resources/img_boxWithFigure.webp';
 import Footer from '../ui/Footer';
 
 

@@ -6,7 +6,7 @@ import { faArrowCircleDown } from '@fortawesome/free-solid-svg-icons'
 
 import GameLogoContainer from '../ui/image/GameLogoContainer';
 import ImageContainer from '../ui/image/ImageContainer';
-import boardGameImg from '../../resources/img_boxWithFigure.png';
+import boardGameImg from '../../resources/img_boxWithFigure.webp';
 import HttpResponseCodes from '../../constants/HttpResponseCodesConstants';
 import Warning from '../ui/Warning';
 
