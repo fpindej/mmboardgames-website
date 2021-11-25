@@ -1,17 +1,39 @@
+@import "react-alice-carousel/lib/scss/alice-carousel.scss";
+
 .about-game-page {
     height: 100%;
+    width: 90%;
 
-    margin: 2rem 1rem;
-    word-wrap: break-word;
-    line-height: 1.625em;
-    word-break: normal;
+    margin: 2rem 3rem;
+    
 
     //Desktops and laptops
     @media only screen  and (min-width : 1224px) {
         width: 50%;
     }
 
+    .alice-carousel {
+        text-align: center;
+
+        .alice-carousel__dots {
+            margin: 0;
+        }
+    }
+
+    .img-rounded {
+        border-radius: 3%;
+        max-width: 100%;
+        
+        //Desktops and laptops
+        @media only screen  and (min-width : 1224px) {
+            max-width: 73%;
+        }
+    }
+
     p {
         margin-bottom: 1em;
+        word-wrap: break-word;
+        line-height: 1.625em;
+        word-break: normal;
     }
 }

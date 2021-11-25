@@ -1,6 +1,13 @@
 import React from 'react';
 import '../../styles/pages/aboutPage.scss';
 
+import ImageContainer from '../ui/image/ImageContainer';
+import Carousel from 'react-alice-carousel';
+
+import img1 from '../../resources/game/img_game1.webp';
+import img2 from '../../resources/game/img_game2.webp';
+import img3 from '../../resources/game/img_game3.webp';
+
 const AboutPage = () => {
     return(
         <div className="about-game-page">
@@ -21,6 +28,17 @@ const AboutPage = () => {
                 The goal of the Ski jumping board game is to place in the best-possible position at individual events and become the overall Competition champion.
                 </p>
             </div>
+            <Carousel 
+            autoPlay
+            autoPlayInterval="3000" 
+            controlsStrategy="responsive" 
+            disableButtonsControls={true} 
+            infinite={true} 
+            responsive={{0: {items: 1}}}>
+                <ImageContainer className="img-rounded" imgPath={img1}/>
+                <ImageContainer className="img-rounded" imgPath={img2}/>
+                <ImageContainer className="img-rounded" imgPath={img3}/>
+            </Carousel>
         </div>
     );
 }
