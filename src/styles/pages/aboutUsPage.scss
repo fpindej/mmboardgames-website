@@ -24,7 +24,7 @@
         //Desktops and laptops
         @media only screen  and (min-width : 1224px) {
             max-width: 30%;
-            margin: 3rem 2rem;
+            margin: 1rem 1rem;
         }
     }
 
@@ -34,6 +34,10 @@
 
         margin: .5rem 1rem;
         
+        h3 {
+            margin-bottom: .5em;
+        }
+
         p {
             margin-bottom: .75em;
             word-wrap: break-word;
@@ -43,7 +47,8 @@
 
         //Desktops and laptops
         @media only screen  and (min-width : 1224px) {
-            margin-bottom: 1.5rem;
+            margin-bottom: 1rem;
+            padding: 2em;
         }
     }
 }
