@@ -22,10 +22,10 @@ const HomePage = () => {
                 <Warning />
             </div>
             <div className="board-img-container">
-                <ImageContainer imgPath={boardGameImg} alt={HttpResponseCodes.NotFound} />
+                <ImageContainer imgPath={boardGameImg} altPath={HttpResponseCodes.NotFound} />
             </div>
             <a href="#about-game-section">
-                <FontAwesomeIcon icon={faArrowCircleDown} alt={HttpResponseCodes.NotFound} className="arrow-icon" />
+                <FontAwesomeIcon icon={faArrowCircleDown} altPath={HttpResponseCodes.NotFound} className="arrow-icon" />
             </a>
         </div>
     );

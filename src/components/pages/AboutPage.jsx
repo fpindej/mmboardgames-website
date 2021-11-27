@@ -7,6 +7,7 @@ import Carousel from 'react-alice-carousel';
 import img1 from '../../resources/game/img_game1.webp';
 import img2 from '../../resources/game/img_game2.webp';
 import img3 from '../../resources/game/img_game3.webp';
+import HttpResponseCodes from '../../constants/HttpResponseCodesConstants';
 
 const AboutPage = () => {
     return(
@@ -35,9 +36,9 @@ const AboutPage = () => {
             disableButtonsControls={true} 
             infinite={true} 
             responsive={{0: {items: 1}}}>
-                <ImageContainer className="img-rounded" imgPath={img3}/>
-                <ImageContainer className="img-rounded" imgPath={img2}/>
-                <ImageContainer className="img-rounded" imgPath={img1}/>
+                <ImageContainer className="img-rounded" imgPath={img3} altPath={HttpResponseCodes.NotFound}/>
+                <ImageContainer className="img-rounded" imgPath={img2} altPath={HttpResponseCodes.NotFound}/>
+                <ImageContainer className="img-rounded" imgPath={img1} altPath={HttpResponseCodes.NotFound}/>
             </Carousel>
         </div>
     );

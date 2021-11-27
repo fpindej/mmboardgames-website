@@ -14,10 +14,10 @@ const ComingSoonPage = () => {
     return (
         <div className="coming-soon-page">
                 <div className="box-img-container">
-                    <ImageContainer imgPath={boardGameImg} alt={HttpResponseCodes.NotFound} />
+                    <ImageContainer imgPath={boardGameImg} altPath={HttpResponseCodes.NotFound} />
                 </div>
                 <div className="jumper-img-container">
-                    <ImageContainer imgPath={JumperImg} alt={HttpResponseCodes.NotFound} />
+                    <ImageContainer imgPath={JumperImg} altPath={HttpResponseCodes.NotFound} />
                 </div>
                 <div className="media-stack">
                     <div className="signup-form-container">
