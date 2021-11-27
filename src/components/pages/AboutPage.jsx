@@ -35,9 +35,9 @@ const AboutPage = () => {
             disableButtonsControls={true} 
             infinite={true} 
             responsive={{0: {items: 1}}}>
-                <ImageContainer className="img-rounded" imgPath={img1}/>
-                <ImageContainer className="img-rounded" imgPath={img2}/>
                 <ImageContainer className="img-rounded" imgPath={img3}/>
+                <ImageContainer className="img-rounded" imgPath={img2}/>
+                <ImageContainer className="img-rounded" imgPath={img1}/>
             </Carousel>
         </div>
     );

@@ -16,7 +16,7 @@ const HomePage = () => {
         <div className="home-page">
             <Snowfall color="white" snowflakeCount={20}/>
             <div className="game-logo">
-                <GameLogoContainer />
+                <h1><GameLogoContainer /></h1>
             </div>
             <div className="warning-banner">
                 <Warning />
@@ -25,7 +25,7 @@ const HomePage = () => {
                 <ImageContainer imgPath={boardGameImg} alt={HttpResponseCodes.NotFound} />
             </div>
             <a href="#about-game-section">
-                <FontAwesomeIcon icon={faArrowCircleDown} className="arrow-icon" />
+                <FontAwesomeIcon icon={faArrowCircleDown} alt={HttpResponseCodes.NotFound} className="arrow-icon" />
             </a>
         </div>
     );
