@@ -1,8 +1,7 @@
 .home-page {
     height: 100vh;
     width: 100%;
-    padding: 1em;
-    padding-bottom: 3em;
+    padding: 0 1em 3em 1em;
 
     display: flex;
     flex-direction: column;
@@ -40,33 +39,51 @@
         }
     }
 
-    .warning-banner {
-        color: #ffffff;
-        background-color: #4a8794;
-        border-radius:.5em;
-        border: 1px solid;
-        padding: 1rem;
-        width: 95%;
+    .kickstarter {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
 
-        text-align: start;
-
-        word-wrap: break-word;
-        line-height: 1.625em;
-        word-break: normal;
-
-        //tablets - portrait
-        @media only screen and (min-device-width : 768px) 
-        and (max-device-width : 1024px)
-        and (orientation : portrait) {
+        .kickstarter-logo {
             width: 80%;
         }
 
-        //Desktops and laptops
-        @media only screen  and (min-width : 1224px) {
-           width: 95%;
+        .visit-form {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            margin-top: 1rem;
+
+            .visit-button {
+                width: 30%;
+                height: 2rem;
+                background-color: #4a8794;
+                border: none;      
+                border-radius: .35em;
+                font-size: medium;
+                font-weight: bold;
+                color: whitesmoke;
+                
+                transition: all .2s ease-in-out;
+
+                &:hover {
+                    cursor: pointer;
+                    transform: scale(1.2);
+                }
+            }
+        }
+        
+        p {
+            font-weight: bold;
+            font-size: 1em;
+            margin-bottom: 1rem;
+
+            @media only screen  and (min-width : 1224px) {
+                font-size: 1.3em;
+            }
         }
     }
-
 
     .board-img-container {
         max-width: 100%;
@@ -75,5 +92,11 @@
     .arrow-icon {
         font-size: 3em;
         color: #4a8794;
+
+        transition: all .2s ease-in-out;
+
+        &:hover {
+            transform: scale(1.2);
+        }
     }
 }

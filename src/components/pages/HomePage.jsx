@@ -7,8 +7,8 @@ import { faArrowCircleDown } from '@fortawesome/free-solid-svg-icons'
 import GameLogoContainer from '../ui/image/GameLogoContainer';
 import ImageContainer from '../ui/image/ImageContainer';
 import boardGameImg from '../../resources/img_boxWithFigure.webp';
+import kickstarterImg from '../../resources/kickstarter-logo-green.webp';
 import HttpResponseCodes from '../../constants/HttpResponseCodesConstants';
-import Warning from '../ui/Warning';
 
 const HomePage = () => {
 
@@ -18,8 +18,12 @@ const HomePage = () => {
             <div className="game-logo">
                 <h1><GameLogoContainer /></h1>
             </div>
-            <div className="warning-banner">
-                <Warning />
+            <div className="kickstarter">
+                <p>CAMPAING STARTING ON 1.12.2021</p>
+                <ImageContainer className="kickstarter-logo" imgPath={kickstarterImg} altPath={HttpResponseCodes.NotFound} />
+                <form className="visit-form" action="https://www.kickstarter.com/projects/skijumpingboardgame/ski-jumping-board-game" method="get" target="_blank">
+                    <button className="visit-button" type="submit">VISIT HERE</button>
+                </form>
             </div>
             <div className="board-img-container">
                 <ImageContainer imgPath={boardGameImg} altPath={HttpResponseCodes.NotFound} />
