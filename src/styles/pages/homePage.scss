@@ -1,7 +1,8 @@
 .home-page {
     height: 100vh;
     width: 100%;
-    padding: 0 1em 3em 1em;
+    padding: 1em;
+    padding-bottom: 3em;
 
     display: flex;
     flex-direction: column;
@@ -39,52 +40,6 @@
         }
     }
 
-    .kickstarter {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-
-        .kickstarter-logo {
-            width: 80%;
-        }
-
-        .visit-form {
-            display: flex;
-            justify-content: center;
-            width: 100%;
-            margin-top: 1rem;
-
-            .visit-button {
-                width: 30%;
-                height: 2rem;
-                background-color: #4a8794;
-                border: none;      
-                border-radius: .35em;
-                font-size: medium;
-                font-weight: bold;
-                color: whitesmoke;
-                
-                transition: all .2s ease-in-out;
-
-                &:hover {
-                    cursor: pointer;
-                    transform: scale(1.2);
-                }
-            }
-        }
-        
-        p {
-            font-weight: bold;
-            font-size: 1em;
-            margin-bottom: 1rem;
-
-            @media only screen  and (min-width : 1224px) {
-                font-size: 1.3em;
-            }
-        }
-    }
-
     .board-img-container {
         max-width: 100%;
     }
@@ -92,11 +47,5 @@
     .arrow-icon {
         font-size: 3em;
         color: #4a8794;
-
-        transition: all .2s ease-in-out;
-
-        &:hover {
-            transform: scale(1.2);
-        }
     }
 }
